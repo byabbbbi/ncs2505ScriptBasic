@@ -21,7 +21,7 @@ public class ExampleScript : MonoBehaviour
         }
         else if(Input.anyKeyDown)
         {
-            GetComponent<Renderer>().material.color = Color.cyan;
+            GetComponent<Renderer>().material.color = Color.magenta;
             
         }
     }
