@@ -10,13 +10,18 @@ public class ExampleScript : MonoBehaviour
         {
             GetComponent<Renderer>().material.color = Color.red;
         }
-        if (Input.GetKeyDown(KeyCode.G))
+        else if (Input.GetKeyDown(KeyCode.G))
         {
             GetComponent<Renderer>().material.color = Color.green;
         }
-        if (Input.GetKeyDown(KeyCode.B))
+        else if (Input.GetKeyDown(KeyCode.B))
         {
             GetComponent<Renderer>().material.color = Color.blue;
+        }
+        else if(Input.anyKeyDown)
+        {
+            GetComponent<Renderer>().material.color = Color.cyan;
+            
         }
     }
 }
