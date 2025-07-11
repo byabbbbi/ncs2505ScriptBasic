@@ -14,7 +14,7 @@ public class VariableExample : MonoBehaviour
         float number3 = 3f, number4 = 4f; // 같은 데이터 형식의 여러 변수 선언 
         bool isBool = true;
         bool isNotTure = true;
-        bool isOver = false;
+        // bool isOver = false;
 
         if (isNotTure)
         {

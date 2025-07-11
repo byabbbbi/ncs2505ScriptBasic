@@ -51,5 +51,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "ncs2505ScriptBasic.sln"
+    "dotnet.defaultSolution": "ncs2505ScriptBasic.sln",
+    "dotnet.preferCSharpExtension": true
 }
