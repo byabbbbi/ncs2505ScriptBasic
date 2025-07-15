@@ -6,23 +6,21 @@ public class ExampleScript : MonoBehaviour
 {
     void Update()
     {
-
         if (Input.GetKeyDown(KeyCode.R))
         {
             GetComponent<Renderer>().material.color = Color.red;
         }
-        else if (Input.GetKeyDown(KeyCode.G))
+        if (Input.GetKeyDown(KeyCode.G))
         {
             GetComponent<Renderer>().material.color = Color.green;
         }
-        else if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.B))
         {
             GetComponent<Renderer>().material.color = Color.blue;
         }
-        else if(Input.anyKeyDown)
+        if (Input.GetKeyDown(KeyCode.V))
         {
-            GetComponent<Renderer>().material.color = Color.magenta;
-            
+            GetComponent<Renderer>().material.color = Color.cyan;
         }
     }
 }

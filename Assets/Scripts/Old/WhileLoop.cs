@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,23 +5,18 @@ using UnityEngine;
 public class WhileLoop : MonoBehaviour
 {
     int cupsInTheSink = 4;
-
-
     void Start()
     {
         while (cupsInTheSink > 0)
         {
-            Debug.Log("I've washed a cup!");
+            Debug.Log("washed cup");
             cupsInTheSink--;
         }
 
         bool shouldContinue = false;
-
-       do
+        do
         {
-            print ("Hello World");
-            
-        }while(shouldContinue == true);
-    
+            print("Hello world");
+        } while (shouldContinue == true);
     }
 }

@@ -4,23 +4,19 @@ using UnityEngine;
 
 public class VariablesAndFunctions : MonoBehaviour
 {
-
-
     void Start()
     {
-        myInt = MultiplyByTwo(myInt);
+        myInt = MultiplyByThree(myInt);
         Debug.Log(myInt);
     }
 
-
-    int MultiplyByTwo(int number)
+    int MultiplyByThree(int number)
     {
         int result;
-        result = number * 2;
+        result = number * 3;
         return result;
     }
     
-     //클래스 내에서 변수 위치는 상관없다!!
-     int myInt = 5;
-    
+    // 클래스 내에서 변수 위치는 상관없다
+    int myInt = 5;
 }

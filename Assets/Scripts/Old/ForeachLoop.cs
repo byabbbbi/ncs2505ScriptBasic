@@ -4,26 +4,29 @@ using UnityEngine;
 
 public class ForeachLoop : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        string[] strings = new string[3];
-
+        var strings = new string[3];
         strings[0] = "First string";
         strings[1] = "Second string";
         strings[2] = "Third string";
 
-        foreach (string item in strings)
+        foreach (var item in strings)
         {
             print(item);
         }
+        for (int i = 0; i < strings.Length; i++)
+        {
+            if (i != 0)
+            {
+                print(strings[i]);
+            }
+        }
 
-        var mylist = new List<int>();
-        foreach (var item in mylist)
+        var myList = new List<int>();
+        foreach (var item in myList)
         {
             print(item);
-            
         }
     }
-
 }
