@@ -1,25 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
-public class EnableComponents : MonoBehaviour
+public class EnableComponent : MonoBehaviour
 {
-    private Light myLight;
-
-
+    Light myLight;
     void Start()
     {
-        //연결하기 전이여서 에러 발생!!!
-        // myLight.enabled = true;
+        // 연결하기 전이라 에러난다
+        //myLight.enabled = true;
         myLight = GetComponent<Light>();
         myLight.enabled = true;
-        
     }
-    
-    
-    void Update ()
+
+    void Update()
     {
-        if(Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.Space))
         {
             myLight.enabled = !myLight.enabled;
         }
